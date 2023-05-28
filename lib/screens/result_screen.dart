@@ -19,9 +19,13 @@ class ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Theme.of(context).primaryColor,
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('BMI CALCULATOR'),
+          title: const Text(
+            'BMI CALCULATOR',
+            style: TextStyle(color: Colors.white),
+          ),
           backgroundColor: Theme.of(context).primaryColor,
         ),
         body: Padding(
@@ -62,12 +66,12 @@ class ResultScreen extends StatelessWidget {
                       ),
                       ResultText(
                         title: bmiResult,
-                        fontsize: 96,
+                        fontsize: 86,
                         fontweight: FontWeight.bold,
                         color: Colors.white,
                       ),
                       const ResultText(
-                        title: 'EXPLANATION',
+                        title: 'EXPLANATION:',
                         fontsize: 16,
                         fontweight: FontWeight.bold,
                         color: Colors.white,

@@ -29,6 +29,7 @@ class BmiCard extends StatelessWidget {
         color: Theme.of(context).primaryColor,
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             title,
@@ -46,7 +47,7 @@ class BmiCard extends StatelessWidget {
               Text(
                 value,
                 style: TextStyle(
-                  fontSize: 64.0.sp,
+                  fontSize: 50.0.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
                 ),

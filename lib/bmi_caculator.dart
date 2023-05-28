@@ -32,7 +32,7 @@ class BMICalculator {
     } else if (_bmi >= 25 && _bmi <= 29.9) {
       return 'You need to eat less and probaly you need to exercise. consult your Doctor';
     } else {
-      return 'you are in obese weight range. you need to eat less and probaly you need  exercise more. consult your Doctor';
+      return 'You are in obese weight range. You need to eat less and probably  need to  exercise more. Consult your Doctor';
     }
   }
 }

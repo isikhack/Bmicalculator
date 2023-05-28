@@ -23,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Theme.of(context).primaryColor,
         drawer: const Drawer(),
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColor,
@@ -35,25 +36,29 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
           centerTitle: true,
-          title: const Text('BMI CALCULATOR'),
+          title: const Text(
+            'BMI CALCULATOR',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(
             horizontal: 16.0.sp,
-            vertical: 24.0.sp,
+            vertical: 30.0.sp,
           ),
           child: Column(
             children: [
               Text(
                 textAlign: TextAlign.center,
-                'Check your Body Mass Index(BMI) to know if you are in shape',
+                'Check your Body Mass Index(BMI) to know if you are in shape.',
                 style: TextStyle(
+                  color: Colors.white,
                   fontSize: 16.0.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
               SizedBox(
-                height: 23.0.h,
+                height: 100.0.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -141,17 +146,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: 10.h),
-              Text(
-                'Tap the button below to check your BMI result',
-                style: TextStyle(
-                  fontSize: 16.0.sp,
-                  fontWeight: FontWeight.w600,
-                ),
-                textAlign: TextAlign.center,
-              ),
+              // Text(
+              // 'Tap the button below to check your BMI result',
+              // style: TextStyle(
+              // fontSize: 16.0.sp,
+              // fontWeight: FontWeight.w600,
+              // ),
+              // textAlign: TextAlign.center,
+              // ),
               const Spacer(),
               CustomButton(
-                title: 'CALCULATOR',
+                title: 'CALCULATE',
                 onpressed: () {
                   Navigator.push(
                     context,
